@@ -1,12 +1,14 @@
 /*  Common Classes and styles */
 html {
   font-size: 16px;
+  font-family: 'Roboto';
 }
 
 .site-container {
-  display: flex;
+  /*display: flex;*/
   max-width: 100%;
   margin: auto;
+
 }
 
 .uppercase {
@@ -17,6 +19,7 @@ html {
   font-weight: bold;
 }
 
+
 /* Header Section */
 .header .site-container{
   display: flex;
@@ -26,6 +29,9 @@ html {
   margin: 0 auto;
   width: 100%;
   align-items: center;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid #c0c0c0;
 }
 
 .lightHeading {
@@ -72,12 +78,12 @@ html {
 /* Main section */
 .main {
   width: 100%;
-  top: 4rem;
-  position: relative;
+  /*top: 4rem;
+  position: relative;*/
 }
 
 /* mobile section for header */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 560px) {
   .logo {
     display: none;
   }
@@ -86,9 +92,136 @@ html {
     display: none;
   }
 
+  .header .site-container {
+    height: 4rem;
+  }
   .mobile {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
   }
 }
 
 /* Banner Section */
+.banner .site-container {
+  width: 100%;
+  background-color: #dcdcdc;
+  display: flex;
+  top: 3rem;
+  position: relative;
+  align-items: flex-start;
+}
+
+.bannerImage {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.bannerImage img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bannerDescription {
+  width: 30%;
+  padding-left: 2rem;
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: column;
+}
+
+.bannerDescription h1 {
+  font-size: 3.5rem;
+  color: black;
+  opacity: 0.7;
+  font-weight: bold;
+  width: 100%;
+  padding-top: 4rem;
+  margin-bottom: 0rem;
+}
+
+.bannerDescription h2{
+  color: black;
+  opacity: 0.7;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+.button {
+  background-color: black;
+  opacity: 0.7;
+  display: inline-block;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 100%;
+  border: none;
+}
+
+/* mobile section for main content of main Banner */
+@media only screen and (max-width: 560px) {
+  .banner .site-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannerImage {
+    width: 100%;
+    top: 0rem;
+    position: relative;
+    padding-top: 0;
+  }
+
+  .bannerDescription {
+    width: 90%;
+    height: auto;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    padding-left: 0.8rem;
+  }
+
+  .bannerDescription h1{
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+
+/* General Information and campus information section */
+.information .site-container {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  top: 3rem;
+  position: relative;
+}
+
+.imageSection {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.imageSection img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.videoSection {
+  width: 60%;
+}
+
+.videoSection video {
+  width: 100%;
+}
