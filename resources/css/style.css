@@ -1,0 +1,81 @@
+/*  Common Classes and styles */
+html {
+  font-size: 16px;
+}
+
+.site-container {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Header Section */
+.header .site-container{
+  display: flex;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+}
+
+.lightHeading {
+  color: grey;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.darkHeading {
+  color: black;
+  opacity: 0.7;
+  font-weight: 900;
+}
+
+.logo {
+  display: flex;
+  margin-left: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 1.5rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+  margin-right: 1.5rem;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.desktop span a{
+  padding-right: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+/* Main section */
+.main {
+  width: 100%;
+  top: 4rem;
+  position: relative;
+}
+
+/* mobile section for header */
+
+/* Banner Section */
