@@ -1,7 +1,7 @@
 /*  Common Classes and styles */
 html {
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 .site-container {
@@ -449,10 +449,152 @@ html {
   }
 }
 
-.videoSection {
+/* Thesis Section of main content section */
+
+.thesis .site-container {
+  display: flex;
+  width: 100%;
+  top: 3rem;
+  position: relative;
+  padding-top: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  margin: 0 0;
+}
+
+.thesisMainHeading {
+  font-size: 2.5rem;
+}
+
+.exhibitContainer {
+  display: flex;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+
+.leadExhibit {
   width: 60%;
+  padding-right: 1rem;
+}
+
+.videoSection:hover {
+  background-color: #c0c0c0;
+}
+
+.videoSection {
+  width: 100%;
+  /*padding-bottom: 1.5rem;*/
 }
 
 .videoSection video {
   width: 100%;
+}
+
+.leadExhibitInfo h2{
+  padding-bottom: 0.5rem;
+}
+
+.leadExhibitInfo p {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  color: grey;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.exhibits {
+  width: 40%;
+  height: auto;
+}
+
+.exhibit {
+  display: flex;
+  justify-content: center;
+}
+
+.exhibit:hover {
+  background-color: #c0c0c0;
+}
+
+.exhibit .exhibitImage{
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.exhibitImage img {
+  width: 100%;
+  height: auto;
+}
+
+.exhibit .exhibitInfo {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.4;
+}
+
+.exhibitInfo h2 {
+  margin-right: 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.exhibitInfo p {
+  margin-right: 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: grey;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+/* Mobile css code and styles for thesis section */
+@media only screen and (max-width: 560px) {
+  .leadExhibit {
+    width: 100%;
+  }
+
+  .videoSection video{
+    width: 100%;
+  }
+
+  .exhibits {
+    display: none;
+  }
+
+  .leadExhibitInfo {
+    display: none;
+  }
+
+  .thesis .site-container {
+    padding-top: 0rem;
+  }
+}
+
+/* CSS code and styles for the footer */
+.footer .site-container{
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  justify-content: space-between;
+  border-top: 1px solid #c0c0c0;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 3rem;
+  color: grey;
+  opacity: 0.9;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.terms {
+  padding-right: 2rem;
+}
+
+.terms span {
+  padding-left: 1rem;
 }
