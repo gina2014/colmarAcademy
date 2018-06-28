@@ -598,3 +598,24 @@ html {
 .terms span {
   padding-left: 1rem;
 }
+
+.fa-copyright {
+  color: black;
+}
+
+/* Mobile css code and styles for footer section */
+@media only screen and (max-width: 560px) {
+  .leadExhibit {
+    padding-bottom: 2rem;
+  }
+
+  .terms {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 2rem;
+  }
+}

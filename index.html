@@ -4,11 +4,24 @@
   <head>
 
     <!-- Links to fonts, favicon image and css pages -->
+    <!-- Set for mobile sized screens -->
     <meta name="viewport" content="width=375">
+
+    <!-- link to google fonts for Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900,900i" rel="stylesheet">
+
+    <!-- Link to font awesome library -->
+    <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- Use of favicon in browser title bar -->
     <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
+
+    <!-- Links to reset and style sheets -->
     <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+
+
     <!-- Page Title -->
     <title>Colmar Academy</title>
 
@@ -23,7 +36,7 @@
       <div class="site-container">
 
         <!-- logo section including logo image and headings for colmar Academy -->
-        <div class="logo">
+        <div class="logo" role="presentation">
 
           <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
           <span class="darkHeading uppercase">Colmar</span>
@@ -62,7 +75,7 @@
         <div class="site-container">
 
           <!-- banner image section -->
-          <div class="bannerImage">
+          <div class="bannerImage" role="presentation">
             <img src="./resources/images/banner.jpg" alt="">
           </div>
 
@@ -82,7 +95,7 @@
           <!-- General Banner and information -->
           <!-- Banner Image section -->
           <div class="generalInfo">
-            <div class="imageSection">
+            <div class="imageSection" role="presentation">
               <img src="resources/images/information-main.jpg" alt="">
             </div>
 
@@ -99,7 +112,7 @@
       <!-- Campus information, orientation, campus info and guest Lecturer -->
           <div class="campusInfoSection">
             <div class="infoSegment">
-              <div class="imageSection">
+              <div class="imageSection" role="presentation">
                 <!-- Image for mobile screens only -->
                 <img class="mobileImage" src="resources/images/information-orientation-mobile.jpg" alt="orientation image">
                 <!-- Image for desktop sized screens -->
@@ -113,7 +126,7 @@
             </div>
 
             <div class="infoSegment">
-              <div class="imageSection">
+              <div class="imageSection" role="presentation">
                 <!-- Image for mobile screens only -->
                 <img class="mobileImage" src="resources/images/information-campus-mobile.jpg" alt="campus image">
                 <!-- Image for desktop sized screens -->
@@ -127,7 +140,7 @@
             </div>
 
             <div class="guestLecture infoSegment">
-              <div class="imageSection">
+              <div class="imageSection" role="presentation">
                 <!-- Image for mobile screens only -->
                 <img class="mobileImage" src="resources/images/information-guest-lecture-mobile.jpg" alt="orientation image">
                 <!-- Image for desktop sized screens -->
@@ -151,8 +164,8 @@
           <div class="courseSections">
             <!-- Course sections -->
             <div class="courses">
-              <div class="courseImage">
-                <img src="resources/images/course-software.jpg" alt="Software Engineering Course Image">
+              <div class="courseImage" role="presentation">
+                <img src="resources/images/course-software.jpg" role="presentation" alt="Software Engineering Course Image">
               </div>
               <div class="courseDescription">
                 <h2 class="darkHeading">Software Engineering</h2>
@@ -162,8 +175,8 @@
             </div>
 
             <div class="courses">
-              <div class="courseImage">
-                <img src="resources/images/course-computer-art.jpg" alt="Computer Art Course Image">
+              <div class="courseImage" role="presentation">
+                <img src="resources/images/course-computer-art.jpg" role="presentation" alt="Computer Art Course Image">
               </div>
               <div class="courseDescription">
                 <h2 class="darkHeading">Computer Art</h2>
@@ -173,8 +186,8 @@
             </div>
 
             <div class="courses">
-              <div class="courseImage">
-                <img src="resources/images/course-design.jpg" alt="Design Courses Image">
+              <div class="courseImage" role="presentation">
+                <img src="resources/images/course-design.jpg" role="presentation" alt="Design Courses Image">
               </div>
               <div class="courseDescription">
                 <h2 class="darkHeading">Design</h2>
@@ -184,8 +197,8 @@
             </div>
 
             <div class="courses">
-              <div class="courseImage">
-                <img src="resources/images/course-data.jpg" alt="Data Course Image">
+              <div class="courseImage" role="presentation">
+                <img src="resources/images/course-data.jpg" role="presentation" alt="Data Course Image">
               </div>
               <div class="courseDescription">
                 <h2 class="darkHeading">Data</h2>
@@ -195,8 +208,8 @@
             </div>
 
             <div class="courses">
-              <div class="courseImage">
-                <img src="resources/images/course-business.jpg" alt="Business Course Image">
+              <div class="courseImage" role="presentation">
+                <img src="resources/images/course-business.jpg" role="presentation" alt="Business Course Image">
               </div>
               <div class="courseDescription">
                 <h2 class="darkHeading">Business</h2>
@@ -206,8 +219,8 @@
             </div>
 
             <div class="courses">
-              <div class="courseImage">
-                <img src="resources/images/course-marketing.jpg" alt="Marketing Course Image">
+              <div class="courseImage" role="presentation">
+                <img src="resources/images/course-marketing.jpg" role="presentation" alt="Marketing Course Image">
               </div>
               <div class="courseDescription">
                 <h2 class="darkHeading">Marketing</h2>
@@ -253,7 +266,7 @@
             <!-- Video in thesis section -->
             <div class="leadExhibit">
 
-              <div class="videoSection">
+              <div class="videoSection" role="presentation">
                 <video controls src="resources/videos/thesis.mp4">
                   Video not supported by your browser
                 </video>
@@ -272,8 +285,8 @@
             <div class="exhibits">
 
               <div class="exhibit">
-                <div class="exhibitImage">
-                  <img src="resources/images/thesis-fisma.jpg" alt="Fisma Thesis Image">
+                <div class="exhibitImage" role="presentation">
+                  <img src="resources/images/thesis-fisma.jpg" role="presentation" alt="Fisma Thesis Image">
                 </div>
                 <div class="exhibitInfo">
                   <h2 class="darkHeading">Fisma: Design and Prototype</h2>
@@ -282,8 +295,8 @@
               </div>
 
               <div class="exhibit">
-                <div class="exhibitImage">
-                  <img src="resources/images/thesis-now-and-then.jpg" alt="Now and then thesis image">
+                <div class="exhibitImage" role="presentation">
+                  <img src="resources/images/thesis-now-and-then.jpg" role="presentation" alt="Now and then thesis image">
                 </div>
                 <div class="exhibitInfo">
                   <h2 class="darkHeading">Now and then</h2>
@@ -301,7 +314,9 @@
     <footer class="footer">
       <div class="site-container">
         <div class="copyright">
-         <span>&copy 2018 Colmar Academy. All Rights Reserved</span>
+          <!-- Use of font awesome icon -->
+          <a href="#login"><i class="fa fa-copyright"></i></a>
+         <span>2018 Colmar Academy. All Rights Reserved</span>
        </div>
        <div class="terms">
          <span>Terms</span>
